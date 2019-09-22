@@ -1,4 +1,8 @@
-
+@media screen and (max-width: 812px) {
+    .payed-btn{
+        width: 93%;
+    }
+}
 
 @media screen and (max-width: 758px){
 	.jcarousel li {
@@ -330,6 +334,9 @@
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
+    .payed-btn{
+        width: 95%;
+    }
 
 }
 @media screen and (max-width: 554px){

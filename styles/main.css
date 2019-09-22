@@ -3432,6 +3432,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     align-items: center;
     justify-content: center;
     height: 100%;
+    max-width: 812px;
+    width: 100%;
+    margin: 0 auto;
 }
 .content-form-pay{
     max-height: 15%;
