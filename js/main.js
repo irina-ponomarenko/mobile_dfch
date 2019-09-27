@@ -2,6 +2,14 @@ $(document).ready(function () {
     $('.jcarousel').jcarouselAutoscroll({
         target: '+=1'
     });
+
+     /*------------mobile filters slideToggle-------*/
+
+    $('.filters-btn').on('click', function(){
+        $(this).closest('.wrapper-sort-catalog').find('.filter-mobile').slideToggle(500);
+
+    });
+    
     /*-----------------counter------------------*/
 
     $('.to-bottom').on('click', function () {
@@ -128,7 +136,6 @@ $(document).ready(function () {
     /*------------click pay card--------------*/
 
     $('.pay-card-btn').on('click', function () {
-        console.log('hdjsh');
        $(this).closest('.content-all').find('.form-pay-card').fadeIn(0, function() {
            if ($(this).is(':visible'))
                $(this).css('display','flex');
@@ -140,5 +147,6 @@ $(document).ready(function () {
         $('.form-pay-card').fadeOut();
         $(this).closest('body').css('overflow', 'inherit');
     });
+
 
 });
