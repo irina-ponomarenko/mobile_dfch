@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div class="wrapper-content-all">
+<div class="wrapper-content-all mobile-version">
 
     <div class="mobile-menu">
         <nav class="top-header-nav">
@@ -216,64 +216,7 @@
                             </form>
                         </div>
                         <div class="content-center-wrapper">
-                            <form class="add-tovar-quick">
-                                <div class="header-quick">
-                                    <a href="" class="title-quick">Добавить товар по-быстрому</a>
-                                </div>
-                                <div class="add-quick">
-                                    <div class="search-wrapper">
-                                        <input type="text" class="input-quick" placeholder="Начните поиск товара">
-                                        <div class="form-search-exit" data-test="search-field-clear-button"></div>
-                                    </div>
-                                    <div class="price-wrapper-content">
-                                        <div class="fast-add-price">
-                                            <div class="about-price-container">
-                                                <p class="price-tovar">849<span class="valuta">&#x20bd</span></p>
-                                                <div class="about-price">
-                                                    <p class="text-about">Цена за  штуку</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-count-wrapper">
-                                            <div class="counter">
-                                                <input type="text" name="number" class="input-counter" value="1">
-                                                <div class="wrapper-btn-counter">
-                                                    <span class="to-top"></span>
-                                                    <span class="to-bottom"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="fast-add-total-price">
-                                            <div class="fast-add-price-total-inner">
-                                                <p>
-                                                    <span>6132</span>
-                                                    <span class="valuta">&#x20bd</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <button type="button" class="btn-button add-btn">
-                                            <span>В корзину</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
                             <div class="container-basket">
-                                <header class="header-basket">
-                                    <div class="wrapper-title-basket">
-                                        <h2 class="title-basket">Корзина</h2>
-                                        <button type="button" class="refresh-btn"></button>
-                                    </div>
-                                    <div class="right-navigate-basket-header">
-                                        <div class="print-page">
-                                            <span class="print"> Распечатать</span>
-                                        </div>
-                                        <div class="delete-all">
-                                            <a href="" class="delete-all-tovar">
-                                                Удалить все товары
-                                            </a>
-                                        </div>
-                                    </div>
-                                </header>
                                 <div class="tabs-switcher">
                                     <div class="tabs-choose">
                                         <ul class="tabs-choose">
@@ -303,7 +246,7 @@
                                                     <tbody>
                                                         <tr>
                                                             <td data-label="">1.</td>
-                                                            <td data-label="Товар">
+                                                            <td data-label="" class="table-header-basket">
                                                                 <div class="container-tovar-face">
                                                                     <div class="wrapper-image-body">
                                                                         <a href="" class="img-card-block">
@@ -316,10 +259,19 @@
                                                                             <span class="kod-tovar">Код: <span>612684</span></span>
                                                                         </div>
                                                                         <a href="" class="name-tovar">Плитка ПВХ Tarkett LOUNGE HUSKY клеевая дуб серый 2,09 м.кв 3 мм</a>
+                                                                        <div class="prise-table-basket">
+                                                                            <p class="calc-price">
+                                                                                <span>849<span class="valuta">₽</span></span>
+                                                                                <span class="drop">x</span>
+                                                                                <span>1</span>
+                                                                            </p>
+                                                                            <p class="price-tovar">849<span class="valuta">₽</span></p>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
+                                                                <button type="button" class="open-more-info-btn"></button>
                                                             </td>
-                                                            <td data-label="Цена">
+                                                            <td data-label="Цена" class="item-table-toggle">
                                                                 <div class="about-price-container">
                                                                     <p class="price-tovar">849<span class="valuta">₽</span></p>
                                                                     <div class="about-price">
@@ -327,38 +279,33 @@
                                                                     </div>
                                                                 </div>
                                                             </td>
-                                                            <td data-label="Количество">
-                                                                <div class="product-count-wrapper">
+                                                            <td data-label="Количество" class="item-table-toggle">
+                                                               <div class="product-count-wrapper">
                                                                     <div class="counter">
+                                                                        <span class="to-top"></span>
                                                                         <input type="text" name="number" class="input-counter" value="1">
-                                                                        <div class="wrapper-btn-counter">
-                                                                            <span class="to-top"></span>
-                                                                            <span class="to-bottom"></span>
-                                                                        </div>
+                                                                        <span class="to-bottom"></span>
                                                                     </div>
                                                                 </div>
                                                             </td>
-                                                            <td data-label="Сумма">
+                                                            <td data-label="Сумма" class="item-table-toggle">
                                                                 <div class="summa-basket">
                                                                     <p class="price-tovar">849<span class="valuta">₽</span></p>
                                                                 </div>
                                                             </td>
-                                                            <td data-label="Вес">
+                                                            <td data-label="Вес" class="item-table-toggle">
                                                                 <div class="massa">
                                                                     <span>1,17 кг</span>
                                                                 </div>
                                                             </td>
-                                                            <th data-label="">
-                                                                <button type="button" class="delete-this"></button>
-                                                            </th>
+                                                            <td data-label="" >
+                                                                <a href="" class="delete-tovar">Удалить товар <span class="delete-this"></span></a>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                                 <div class="container-footer-table-basket">
                                                     <div class="right-navigate-basket-header">
-                                                        <div class="print-page">
-                                                            <span class="print"> Распечатать</span>
-                                                        </div>
                                                         <div class="delete-all">
                                                             <a href="" class="delete-all-tovar">
                                                                 Удалить все товары
@@ -390,7 +337,6 @@
                                                             </div>
                                                         </header>
                                                         <div class="content-basket-delivery">
-                                                            <a href="" class="number-edit">Куда ввести номер сертификата?</a>
                                                             <div class="container-choise-delivery">
                                                                 <div class="choise-delivery">
                                                                     <input type="radio" name="radio-choise" id="radio-3" checked=>
@@ -402,7 +348,7 @@
                                                                 </div>
                                                             </div>
                                                             <button type="submit" class="btn-button form-btn">ОФОРМИТЬ</button>
-                                                            <p class="info-delivery">При самовывозе доступна услуга <span>"Собрет магазин"</span></p>
+                                                            <p class="info-delivery">При самовывозе доступна услуга <span>"Соберет магазин"</span></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -412,7 +358,7 @@
                                     <div class="tabs-content-choose legal" id="tab-b-2">
                                         <form class="choose-container">
                                             <div class="wrapper-table-basket">
-                                                <table class="basket-table">
+                                                 <table class="basket-table">
                                                     <thead>
                                                         <tr>
                                                             <th class="item-table-title"></th>
@@ -427,7 +373,7 @@
                                                     <tbody>
                                                         <tr>
                                                             <td data-label="">1.</td>
-                                                            <td data-label="Товар">
+                                                            <td data-label="" class="table-header-basket">
                                                                 <div class="container-tovar-face">
                                                                     <div class="wrapper-image-body">
                                                                         <a href="" class="img-card-block">
@@ -440,49 +386,53 @@
                                                                             <span class="kod-tovar">Код: <span>612684</span></span>
                                                                         </div>
                                                                         <a href="" class="name-tovar">Плитка ПВХ Tarkett LOUNGE HUSKY клеевая дуб серый 2,09 м.кв 3 мм</a>
+                                                                        <div class="prise-table-basket">
+                                                                            <p class="calc-price">
+                                                                                <span>809<span class="valuta">₽</span></span>
+                                                                                <span class="drop">x</span>
+                                                                                <span>1</span>
+                                                                            </p>
+                                                                            <p class="price-tovar">809<span class="valuta">₽</span></p>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
+                                                                <button type="button" class="open-more-info-btn"></button>
                                                             </td>
-                                                            <td data-label="Цена">
+                                                            <td data-label="Цена" class="item-table-toggle">
                                                                 <div class="about-price-container">
-                                                                    <p class="price-tovar">849<span class="valuta">₽</span></p>
+                                                                    <p class="price-tovar">809<span class="valuta">₽</span></p>
                                                                     <div class="about-price">
                                                                         <p class="text-about">Цена за  штуку</p>
                                                                     </div>
                                                                 </div>
                                                             </td>
-                                                            <td data-label="Количество">
-                                                                <div class="product-count-wrapper">
+                                                            <td data-label="Количество" class="item-table-toggle">
+                                                               <div class="product-count-wrapper">
                                                                     <div class="counter">
+                                                                        <span class="to-top"></span>
                                                                         <input type="text" name="number" class="input-counter" value="1">
-                                                                        <div class="wrapper-btn-counter">
-                                                                            <span class="to-top"></span>
-                                                                            <span class="to-bottom"></span>
-                                                                        </div>
+                                                                        <span class="to-bottom"></span>
                                                                     </div>
                                                                 </div>
                                                             </td>
-                                                            <td data-label="Сумма">
+                                                            <td data-label="Сумма" class="item-table-toggle">
                                                                 <div class="summa-basket">
-                                                                    <p class="price-tovar">849<span class="valuta">₽</span></p>
+                                                                    <p class="price-tovar">809<span class="valuta">₽</span></p>
                                                                 </div>
                                                             </td>
-                                                            <td data-label="Вес">
+                                                            <td data-label="Вес" class="item-table-toggle">
                                                                 <div class="massa">
                                                                     <span>1,17 кг</span>
                                                                 </div>
                                                             </td>
-                                                            <th data-label="">
-                                                                <button type="button" class="delete-this"></button>
-                                                            </th>
+                                                            <td data-label="" >
+                                                                <a href="" class="delete-tovar">Удалить товар <span class="delete-this"></span></a>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                                 <div class="container-footer-table-basket">
                                                     <div class="right-navigate-basket-header">
-                                                        <div class="print-page">
-                                                            <span class="print"> Распечатать</span>
-                                                        </div>
                                                         <div class="delete-all">
                                                             <a href="" class="delete-all-tovar">
                                                                 Удалить все товары
@@ -495,24 +445,6 @@
                                                 <div class="block-footer-basket">
                                                     <div class="sale-card-block">
                                                         <p>Для юридических лиц мы установили специальные цены</p>
-                                                    </div>
-                                                </div>
-                                                <div class="sale-for-bayer">
-                                                    <header class="header-sale-bayer">
-                                                        <h3>Скидки</h3>
-                                                        <div class="wrapper-sale-number">
-                                                            <p>Для юридических лиц</p>
-                                                            <p class="price-tovar">249<span class="valuta">₽</span></p>
-                                                        </div>
-                                                    </header>
-                                                    <div class="sertificate">
-                                                        <h3>Сертификат высшая лига</h3>
-                                                        <label for="inn">Введите ИНН компании</label>
-                                                        <input type="text" name="INN" id="inn" placeholder="00000000000000">
-                                                    </div>
-                                                    <div class="footer-sale-for-bayer">
-                                                        <p>Выгода</p>
-                                                        <p class="price-tovar">249<span class="valuta">₽</span></p>
                                                     </div>
                                                 </div>
                                                 <div class="block-footer-basket">
@@ -531,7 +463,6 @@
                                                             </div>
                                                         </header>
                                                         <div class="content-basket-delivery">
-                                                            <a href="" class="number-edit">Куда ввести номер сертификата?</a>
                                                             <div class="container-choise-delivery">
                                                                 <div class="choise-delivery">
                                                                     <input type="radio" name="radio-choise" id="radio-1" checked=>
@@ -543,7 +474,7 @@
                                                                 </div>
                                                             </div>
                                                             <button type="submit" class="btn-button form-btn">ОФОРМИТЬ</button>
-                                                            <p class="info-delivery">При самовывозе доступна услуга <span>"Собрет магазин"</span></p>
+                                                            <p class="info-delivery">При самовывозе доступна услуга <span>"Соберет магазин"</span></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -552,6 +483,12 @@
                                     </div>
                                 </div>
                             </div>
+                            <form class="form-info message-form">
+                                <h3 class="title-form-info title-message-form">Подпишитесь на акции и специальные предложения!</h3>
+                                <input type="email" name="email" class="input-form-info" placeholder="Email" required>
+                                <button type="submit" class="btn-button btn-info">Подписаться</button>
+                                <p class="politic-info">Нажимая на кнопку "Подписаться", я даю согласие на обработку персональных данных в соответствии с <a href="">"Политикой в области обработки и защиты персональных данных".</a></p>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -612,7 +549,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="center-footer">
+            <div class="center-footer red-bg">
+                <div class="mobile-footer-block">
+                    <a href="" class="return-to-desktop">Полная версия сайта</a>
+                     <div class="auth-block">
+                        <a href="" class="auth-link">Вход</a>
+                        <span>/</span>
+                        <a href="" class="auth-link">Регистрация</a>
+                    </div>
+                </div>
                 <div class="container-block">
                     <ul class="footer-list">
                         <li class="item-footer">
@@ -632,6 +577,29 @@
                                 </li>
                                 <li class="sub-footer-item">
                                     <a href="" class="footer-link">Контакты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item-footer bayers-footer-list">
+                            <h3 class="title-footer-item">ПОКУПАТЕЛЯМ</h3>
+                            <ul class="sub-footer-list">
+                                <li class="sub-footer-list">
+                                    <a href="" class="footer-link">Скидки</a>
+                                </li>
+                                <li class="sub-footer-list">
+                                    <a href="" class="footer-link">Возврат товара</a>
+                                </li>
+                                <li class="sub-footer-list">
+                                    <a href="" class="footer-link">Способы оплаты</a>
+                                </li>
+                                <li class="sub-footer-list">
+                                    <a href="" class="footer-link">Для юридических лиц</a>
+                                </li>
+                                <li class="sub-footer-list">
+                                    <a href="" class="footer-link">Зарегестрировать карту</a>
+                                </li>
+                                <li class="sub-footer-list">
+                                    <a href="" class="footer-link">Подарочные сертификаты</a>
                                 </li>
                             </ul>
                         </li>
@@ -656,21 +624,6 @@
                             </ul>
                         </li>
                         <li class="item-footer">
-                            <h3 class="title-footer-item">МЫ ПРИНИМАЕМ К ОПЛАТЕ</h3>
-                            <ul class="sub-footer-list way-pay">
-                                <li class="sub-footer-item pay-sposob">
-                                    <a href="" class="link-pay-card visa"></a>
-                                    <a href="" class="link-pay-card master-card"></a>
-                                </li>
-                                <li class="sub-footer-item">
-                                    <a href="" class="footer-link visa"></a>
-                                </li>
-                                <li class="sub-footer-item">
-                                    <a href="" class="footer-link master-card"></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="item-footer">
                             <h3 class="title-footer-item">ОБРАТНАЯ СВЯЗЬ</h3>
                             <ul class="sub-footer-list">
                                 <li class="sub-footer-item">
@@ -685,18 +638,6 @@
                                     <a href="" class="footer-link service">
                                         <span>Сообщить об ошибке</span>
                                     </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="item-footer">
-                            <h3 class="title-footer-item">КОНТАКТЫ</h3>
-                            <ul class="sub-footer-list way-pay">
-                                <li class="sub-footer-item">
-                                    <p>+7 (812) 603-54-78<br>
-                                        Санкт-Петербург</p>
-                                </li>
-                                <li class="sub-footer-item">
-                                    <p>sale@dfch.ru</p>
                                 </li>
                             </ul>
                         </li>

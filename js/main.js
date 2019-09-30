@@ -9,6 +9,13 @@ $(document).ready(function () {
         $(this).closest('.wrapper-sort-catalog').find('.filter-mobile').slideToggle(500);
 
     });
+
+    /*----------basket list toggle----------*/
+
+    $(".open-more-info-btn").on('click', function(){
+        $(this).closest(".basket-table").toggleClass('toggle-item-block');
+        $('.table-header-basket').toggleClass('border-toggle');
+    });
     
     /*-----------------counter------------------*/
 
